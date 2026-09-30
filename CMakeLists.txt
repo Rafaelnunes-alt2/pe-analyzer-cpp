@@ -1,0 +1,10 @@
+# feito por: maquinzz
+cmake_minimum_required(VERSION 3.16)
+project(pe-analyzer-cpp VERSION 1.0.0 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+add_executable(pe-analyzer src/main.cpp src/pe_parser.cpp)
+target_include_directories(pe-analyzer PRIVATE include)
+target_compile_options(pe-analyzer PRIVATE -Wall -Wextra -Wpedantic -Werror -D_FORTIFY_SOURCE=2 -fstack-protector-strong)
+target_link_options(pe-analyzer PRIVATE -Wl,-z,RelRO,-z,Now)

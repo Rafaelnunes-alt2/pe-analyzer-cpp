@@ -1,0 +1,68 @@
+file: /home/maquinzz/BlueStacksInstaller_5.22.251.1001_native_d50486ddeb11993071c7cb9c357f61e6_MzsxNSwwOzUsNTsxNQ==.exe
+size: 953352 bytes
+arch: PE32 x86 (i386)
+sections: 4
+entry: 0x0001A5B2
+imagebase: 0x00400000
+subsystem: GUI
+
+[sections]
+.text    VA=0x00001000 VS=  133226 RAW=  133632 ENT=6.653 CH=0x60000020
+.rdata   VA=0x00022000 VS=   30512 RAW=   30720 ENT=4.718 CH=0x40000040
+.data    VA=0x0002A000 VS=   17988 RAW=    6144 ENT=4.068 CH=0xC0000040
+.rsrc    VA=0x0002F000 VS=  187828 RAW=  187904 ENT=6.304 CH=0x40000040
+
+[imports] dlls=4
+functions=120
+  KERNEL32.dll (100)
+    DeleteCriticalSection
+    EnterCriticalSection
+    LeaveCriticalSection
+    GetLastError
+    MultiByteToWideChar
+    WideCharToMultiByte
+    LoadLibraryExW
+    GetModuleFileNameW
+    LocalFree
+    FormatMessageW
+    GetSystemDirectoryW
+    CloseHandle
+    SetFileTime
+    CreateFileW
+    SetFileAttributesW
+    RemoveDirectoryW
+    GetProcAddress
+    GetModuleHandleW
+    CreateDirectoryW
+    DeleteFileW
+    SetCurrentDirectoryW
+    GetCurrentDirectoryW
+    GetTempPathW
+    SetLastError
+    GetCurrentProcessId
+    ... +75 more
+  USER32.dll (16)
+    DestroyWindow
+    LoadIconW
+    EndDialog
+    KillTimer
+    SetTimer
+    SetWindowTextW
+    PostMessageW
+    SendMessageW
+    MessageBoxW
+    DialogBoxParamW
+    GetWindowLongW
+    SetWindowLongW
+    ShowWindow
+    LoadStringW
+    CharUpperW
+    GetDlgItem
+  SHELL32.dll (1)
+    ShellExecuteExW
+  OLEAUT32.dll (3)
+    Ordinal_9
+    Ordinal_4
+    Ordinal_7
+
+[exports] count=0

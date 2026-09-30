@@ -1,0 +1,8 @@
+# feito por: maquinzz
+build/
+cmake-build-*/
+*.o
+*.obj
+*.exe
+.DS_Store
+Thumbs.db

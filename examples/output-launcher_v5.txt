@@ -1,0 +1,79 @@
+file: /home/maquinzz/launcher_v5.exe
+size: 5884416 bytes
+arch: PE32+ x64 (x86-64)
+sections: 11
+entry: 0x000013E0
+imagebase: 0x0000000140000000
+subsystem: GUI
+
+[sections]
+.text    VA=0x00001000 VS=  109144 RAW=  109568 ENT=6.185 CH=0x60000060
+.data    VA=0x0001C000 VS=    1504 RAW=    1536 ENT=0.598 CH=0xC0000040
+.rdata   VA=0x0001D000 VS=   19264 RAW=   19456 ENT=5.002 CH=0x40000040
+.pdata   VA=0x00022000 VS=    3516 RAW=    3584 ENT=5.149 CH=0x40000040
+.xdata   VA=0x00023000 VS=    3496 RAW=    3584 ENT=4.473 CH=0x40000040
+.bss     VA=0x00024000 VS=    5664 RAW=       0 ENT=0.000 CH=0xC0000080
+.idata   VA=0x00026000 VS=    2732 RAW=    3072 ENT=3.924 CH=0xC0000040
+.CRT     VA=0x00027000 VS=      96 RAW=     512 ENT=0.269 CH=0xC0000040
+.tls     VA=0x00028000 VS=      16 RAW=     512 ENT=0.000 CH=0xC0000040
+.rsrc    VA=0x00029000 VS= 5740120 RAW= 5740544 ENT=7.053 CH=0x40000040
+.reloc   VA=0x005A3000 VS=     776 RAW=    1024 ENT=4.604 CH=0x42000040
+
+[imports] dlls=2
+functions=76
+  KERNEL32.dll (28)
+    CloseHandle
+    DeleteCriticalSection
+    EnterCriticalSection
+    GetLastError
+    GetModuleHandleW
+    GetProcAddress
+    GetStartupInfoW
+    GetThreadId
+    InitializeCriticalSection
+    IsDBCSLeadByteEx
+    LeaveCriticalSection
+    MultiByteToWideChar
+    RaiseException
+    RtlCaptureContext
+    RtlLookupFunctionEntry
+    RtlUnwindEx
+    RtlVirtualUnwind
+    SetLastError
+    SetUnhandledExceptionFilter
+    Sleep
+    TlsAlloc
+    TlsFree
+    TlsGetValue
+    TlsSetValue
+    TryEnterCriticalSection
+    ... +3 more
+  msvcrt.dll (48)
+    __C_specific_handler
+    ___lc_codepage_func
+    ___mb_cur_max_func
+    __iob_func
+    __set_app_type
+    __setusermatherr
+    __wgetmainargs
+    __winitenv
+    _amsg_exit
+    _cexit
+    _commode
+    _errno
+    fwprintf
+    _fmode
+    _initterm
+    _onexit
+    _wcmdln
+    _wcsicmp
+    abort
+    calloc
+    exit
+    fprintf
+    fputc
+    fputs
+    fputwc
+    ... +23 more
+
+[exports] count=0
