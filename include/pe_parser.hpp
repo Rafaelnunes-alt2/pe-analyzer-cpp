@@ -96,24 +96,8 @@ public:
         if (limit > maxlen) limit = maxlen;
         for (std::size_t i = 0; i < limit; ++i) {
             std::uint8_t c = data[off + i];
-            if (c == 0) return !out.empty() || true;
-            if (c < 32 || c > 126) {
-                if (c == 0) break;
-                if (c < 32 || c > 126) return false;
-            }
-            out.push_back(static_cast<char>(c));
-        }
-        return !out.empty();
-    }
-    bool rawcstr(std::size_t off, std::size_t maxlen, std::string &out) const {
-        out.clear();
-        if (maxlen == 0 || maxlen > 256) return false;
-        if (off >= data.size()) return false;
-        std::size_t limit = data.size() - off;
-        if (limit > maxlen) limit = maxlen;
-        for (std::size_t i = 0; i < limit; ++i) {
-            std::uint8_t c = data[off + i];
             if (c == 0) return true;
+            if (c < 32 || c > 126) return false;
             out.push_back(static_cast<char>(c));
         }
         return !out.empty();
